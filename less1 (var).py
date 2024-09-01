@@ -1,0 +1,6 @@
+complete_hw = (12)
+time_hw = (1.5)
+course_name = ('Python')
+time_on_1hw = (time_hw/complete_hw)
+print(course_name,complete_hw,time_hw,time_on_1hw)
+print('Курс:',course_name,'Всего задач:',complete_hw,'Затрачено часов:',time_hw,'Среднее время выполнения:',time_on_1hw)
