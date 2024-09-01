@@ -1,0 +1,12 @@
+#1st program
+print( 9**0.5*5)
+#2nd program
+print(9.99>9.98 and 10001!=1000.1)
+#3rd program
+print(2*2+2)
+print(2*(2+2))
+print((2*2+2)==(2*(2+2)))
+#4th program
+print(int(float('123.456')*(float(10))%((10))))
+
+
