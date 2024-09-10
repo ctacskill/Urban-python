@@ -14,7 +14,7 @@ count = 0
 while count < len(my_list):
     if my_list[count] == 0:
         count += 1
-    if my_list[count] >= 0:
+    if my_list[count] > 0:
         print(my_list[count])
         count += 1
         continue
