@@ -9,7 +9,7 @@ def password():
     print(n)
     for i in range(1, n):
         for k in range(1,n):
-            if i > k:
+            if i >= k:
                 continue
             else:
                 sum = i + k
@@ -17,8 +17,7 @@ def password():
                 password_.append(i)
                 password_.append(k)
                 result= result + str(i) + str(k)
-
-    print(password_)
+                
     print(result)
 
 password()
