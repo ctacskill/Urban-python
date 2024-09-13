@@ -4,6 +4,9 @@
 
 def get_matrix (n, m, value):
     matrix = []
+    if n  <= 0 or m <=0 or value <=0:
+        print(matrix)
+        return matrix
     for i in range(n):
          matrix.append([])
          for k in range(m):
