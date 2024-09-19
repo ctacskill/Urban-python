@@ -29,12 +29,11 @@ def string_info(string):
 def is_contains (string, list_to_search):
     count_calls()
     string = string.lower()
-    list_to_search = (' '.join(list_to_search))
-    list_to_search = list_to_search.lower()
-    if string in list_to_search:
-        result = True
-    else:
-        result = False
+    for match in list_to_search:
+        if string == match.lower():
+            result = True
+        else:
+            result = False
     return result
 
 print(string_info('Capybara'))
