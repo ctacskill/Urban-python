@@ -1,6 +1,3 @@
-from math import floor
-
-
 class House:
         def __init__(self, name, floor):
             self.name = name
