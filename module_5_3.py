@@ -18,7 +18,6 @@ class House:
     def __str__(self):
         return f'Название: {self.name}, кол-во этажей: {self.floor}'
     def __eq__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor == other.floor
     def __add__(self, value):
         self.floor += value
@@ -28,19 +27,14 @@ class House:
     def __iadd__(self, value):
         return self.__add__(value)
     def __gt__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor > other.floor
     def __lt__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor < other.floor
     def __ge__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor >= other.floor
     def __le__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor <= other.floor
     def __ne__(self, other):
-        if isinstance(other, House) or isinstance(other, int):
             return self.floor != other.floor
 
 
