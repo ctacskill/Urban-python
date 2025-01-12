@@ -45,6 +45,15 @@ def select_users():
     for user in users:
         print(f'Имя: {user[0]} | Почта: {user[1]} | Возраст: {user[2]} | Баланс: {user[3]}')
 
-select_users()
+# -----------------------------------------------------------------
+# module_14_2
+
+def avg_balance():
+    all_ = cursor.execute('SELECT COUNT(*) FROM Users').fetchone()
+    sum_ = cursor.execute('SELECT SUM(balance) FROM Users').fetchone()
+    avg = sum_[0] / all_[0]
+    print(avg)
+
+avg_balance()
 connection.commit()
 connection.close()
